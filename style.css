@@ -2,4 +2,39 @@
 * {
   margin: 0;
   padding: 0;
+  overflow: hidden;
+}
+
+/* Small device */
+@media only screen and (max-width: 480px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+  }
+
+  .navbar__logo {
+    width: 75px;
+    height: 75px;
+  }
+
+  .navbar__nav-links {
+    display: none;
+  }
+
+  .navbar__hamburger-icon {
+    cursor: pointer;
+  }
+
+  .navbar__hamburger-icon div {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+  }
+
+  .navbar__bottom-border {
+    width: 100%;
+  }
 }
