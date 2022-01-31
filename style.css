@@ -2,7 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 /* Small device */
@@ -11,12 +11,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem;
+    padding: 0 1.5rem;
+    background-color: rgb(196, 196, 196);
   }
 
   .navbar__logo {
     width: 75px;
     height: 75px;
+    padding: 1rem 0;
   }
 
   .navbar__nav-links {
@@ -36,5 +38,9 @@
 
   .navbar__bottom-border {
     width: 100%;
+  }
+
+  .pixel-art {
+    width: 50%;
   }
 }
