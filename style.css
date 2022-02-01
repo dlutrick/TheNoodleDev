@@ -5,6 +5,10 @@
   overflow-x: hidden;
 }
 
+body {
+  color: rgb(37, 37, 37);
+}
+
 .copyright {
   position: relative;
   bottom: 0;
@@ -23,16 +27,25 @@
   margin-top: 1rem;
 }
 
+// .navbar {
+//   position: fixed;
+//   width: 100%;
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   background-color: rgb(65, 65, 65);
+// }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: rgb(65, 65, 65);
+}
+
 /* Small device */
 @media only screen and (max-width: 480px) {
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 1.5rem;
-    background-color: rgb(245, 246, 247);
-  }
-
   .navbar__logo {
     height: 75px;
     padding: 1rem 0;
@@ -42,14 +55,10 @@
     display: none;
   }
 
-  .navbar__hamburger-icon {
-    cursor: pointer;
-  }
-
   .navbar__hamburger-icon div {
     width: 35px;
     height: 5px;
-    background-color: black;
+    background-color: rgb(245, 246, 247);
     margin: 6px 0;
   }
 
@@ -70,6 +79,14 @@
   }
 
   .responsive-card__photo {
+    height: 150px;
+  }
+
+  .dev-card__photo {
+    height: 150px;
+  }
+
+  .portfolio-card__photo {
     height: 150px;
   }
 }
